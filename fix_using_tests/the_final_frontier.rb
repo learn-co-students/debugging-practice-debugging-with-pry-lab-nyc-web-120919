@@ -12,7 +12,15 @@ def crew
 end
 
 def greet_crew (crew)
-  crew.each {|crew_member| "Hello #{crew_member}."}
+  #i = 0 
+  #my_array = []
+  #while i < crew.length do 
+    #my_array << "Hello #{crew[i]}."
+    #i += 1 
+  #end 
+  #my_array 
+  crew.map {|crew_member| "Hello #{crew_member}."}
+  #binding.pry 
 end
 
 def engage
